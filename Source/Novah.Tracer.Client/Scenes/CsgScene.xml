@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Scene xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="Scene.xsd"
+       BackgroundColor="0,0,0"
+       DefaultRefractionIndex="1"
+       AntialiasingLevel="4">
+  <Camera>
+    <PerspectiveCamera Position="-13,30,-50" LookAt="0,12,0" Up="0,1,0" ScreenWidth="1600" ScreenHeight="900" FieldOfView="1.57079633" />
+  </Camera>
+  <Materials>
+    <BasicMaterial Name="Red"
+              Color="1,0,0"
+              SpecularColor="1,1,1"
+              AmbientCoefficient="0.1"
+              DiffuseCoefficient="0.9"
+              SpecularCoefficient="0"
+              ReflectionCoefficient="0"
+              RefractionCoefficient="0"
+              SpecularPower="0"
+              RefractionIndex="1"
+              LightOccluder="true"
+              ShadowReceiver="true" />
+    <BasicMaterial Name="Green"
+              Color="0,1,0"
+              SpecularColor="1,1,1"
+              AmbientCoefficient="0.1"
+              DiffuseCoefficient="0.9"
+              SpecularCoefficient="0"
+              ReflectionCoefficient="0"
+              RefractionCoefficient="0"
+              SpecularPower="0"
+              RefractionIndex="1"
+              LightOccluder="true"
+              ShadowReceiver="true" />
+    <BasicMaterial Name="Blue"
+              Color="0,0,1"
+              SpecularColor="1,1,1"
+              AmbientCoefficient="0.1"
+              DiffuseCoefficient="0.9"
+              SpecularCoefficient="0"
+              ReflectionCoefficient="0"
+              RefractionCoefficient="0"
+              SpecularPower="0"
+              RefractionIndex="1"
+              LightOccluder="true"
+              ShadowReceiver="true" />
+    <BasicMaterial Name="Metalic"
+              Color="1,1,1"
+              SpecularColor="1,1,1"
+              AmbientCoefficient="0.1"
+              DiffuseCoefficient="0.5"
+              SpecularCoefficient="0.5"
+              ReflectionCoefficient="0.5"
+              RefractionCoefficient="0"
+              SpecularPower="100"
+              RefractionIndex="1"
+              LightOccluder="true"
+              ShadowReceiver="true" />
+  </Materials>
+  <Lights>
+    <PointLight Color="1,1,1" Position="43,43,13" />
+  </Lights>
+  <RootSurface>
+    <SurfaceGroup>
+      <Surfaces>
+        <Csg Operation="Difference">
+          <LeftSurface>
+            <Csg Operation="Intersection">
+              <LeftSurface>
+                <AxisAlignedRectangularBox Material="Red" Minimum="-10,5,-10" Maximum="10,25,10" />
+              </LeftSurface>
+              <RightSurface>
+                <Sphere Material="Blue" Center="0,15,0" Radius="14" />
+              </RightSurface>
+            </Csg>
+          </LeftSurface>
+          <RightSurface>
+            <Sphere Material="Green" Center="0,15,0" Radius="13" />
+          </RightSurface>
+        </Csg>
+      </Surfaces>
+    </SurfaceGroup>
+  </RootSurface>
+</Scene>

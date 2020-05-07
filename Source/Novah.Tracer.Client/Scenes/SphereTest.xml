@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Scene xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="Scene.xsd"
+       BackgroundColor="0,0,0"
+       DefaultRefractionIndex="1">
+  <Camera>
+    <PerspectiveCamera Position="-10,30,-10" LookAt="0,20,0" Up="0,1,0" ScreenWidth="1600" ScreenHeight="900" FieldOfView="1.57079633" />
+  </Camera>
+  <Materials>
+    <Material Name="Metalic"
+              Color="1,1,1"
+              SpecularColor="1,1,1"
+              AmbientCoefficient="0.1"
+              DiffuseCoefficient="0.5"
+              SpecularCoefficient="0.5"
+              ReflectionCoefficient="0.5"
+              RefractionCoefficient="0"
+              SpecularPower="100"
+              RefractionIndex="1"
+              LightOccluder="true"
+              ShadowReceiver="true" />
+  </Materials>
+  <Lights>
+    <PointLight Color="1,1,1" Position="30,20,30" />
+  </Lights>
+  <RootSurface>
+    <SurfaceGroup>
+      <Surfaces>
+        <!-- Row 1 -->
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="000,0,000" Radius="4" />
+            <Sphere Material="Metalic" Center="000,0,010" Radius="4" />
+            <Sphere Material="Metalic" Center="000,0,020" Radius="4" />
+            <Sphere Material="Metalic" Center="000,0,030" Radius="4" />
+            <Sphere Material="Metalic" Center="000,0,040" Radius="4" />
+            <Sphere Material="Metalic" Center="000,0,050" Radius="4" />
+            <Sphere Material="Metalic" Center="000,0,060" Radius="4" />
+            <Sphere Material="Metalic" Center="000,0,070" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="000,0,080" Radius="4" />
+            <Sphere Material="Metalic" Center="000,0,090" Radius="4" />
+            <Sphere Material="Metalic" Center="000,0,100" Radius="4" />
+            <Sphere Material="Metalic" Center="000,0,110" Radius="4" />
+            <Sphere Material="Metalic" Center="000,0,120" Radius="4" />
+            <Sphere Material="Metalic" Center="000,0,130" Radius="4" />
+            <Sphere Material="Metalic" Center="000,0,140" Radius="4" />
+            <Sphere Material="Metalic" Center="000,0,150" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <!-- Row 2 -->
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="010,0,000" Radius="4" />
+            <Sphere Material="Metalic" Center="010,0,010" Radius="4" />
+            <Sphere Material="Metalic" Center="010,0,020" Radius="4" />
+            <Sphere Material="Metalic" Center="010,0,030" Radius="4" />
+            <Sphere Material="Metalic" Center="010,0,040" Radius="4" />
+            <Sphere Material="Metalic" Center="010,0,050" Radius="4" />
+            <Sphere Material="Metalic" Center="010,0,060" Radius="4" />
+            <Sphere Material="Metalic" Center="010,0,070" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="010,0,080" Radius="4" />
+            <Sphere Material="Metalic" Center="010,0,090" Radius="4" />
+            <Sphere Material="Metalic" Center="010,0,100" Radius="4" />
+            <Sphere Material="Metalic" Center="010,0,110" Radius="4" />
+            <Sphere Material="Metalic" Center="010,0,120" Radius="4" />
+            <Sphere Material="Metalic" Center="010,0,130" Radius="4" />
+            <Sphere Material="Metalic" Center="010,0,140" Radius="4" />
+            <Sphere Material="Metalic" Center="010,0,150" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <!-- Row 3 -->
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="020,0,000" Radius="4" />
+            <Sphere Material="Metalic" Center="020,0,010" Radius="4" />
+            <Sphere Material="Metalic" Center="020,0,020" Radius="4" />
+            <Sphere Material="Metalic" Center="020,0,030" Radius="4" />
+            <Sphere Material="Metalic" Center="020,0,040" Radius="4" />
+            <Sphere Material="Metalic" Center="020,0,050" Radius="4" />
+            <Sphere Material="Metalic" Center="020,0,060" Radius="4" />
+            <Sphere Material="Metalic" Center="020,0,070" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="020,0,080" Radius="4" />
+            <Sphere Material="Metalic" Center="020,0,090" Radius="4" />
+            <Sphere Material="Metalic" Center="020,0,100" Radius="4" />
+            <Sphere Material="Metalic" Center="020,0,110" Radius="4" />
+            <Sphere Material="Metalic" Center="020,0,120" Radius="4" />
+            <Sphere Material="Metalic" Center="020,0,130" Radius="4" />
+            <Sphere Material="Metalic" Center="020,0,140" Radius="4" />
+            <Sphere Material="Metalic" Center="020,0,150" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <!-- Row 4 -->
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="030,0,000" Radius="4" />
+            <Sphere Material="Metalic" Center="030,0,010" Radius="4" />
+            <Sphere Material="Metalic" Center="030,0,020" Radius="4" />
+            <Sphere Material="Metalic" Center="030,0,030" Radius="4" />
+            <Sphere Material="Metalic" Center="030,0,040" Radius="4" />
+            <Sphere Material="Metalic" Center="030,0,050" Radius="4" />
+            <Sphere Material="Metalic" Center="030,0,060" Radius="4" />
+            <Sphere Material="Metalic" Center="030,0,070" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="030,0,080" Radius="4" />
+            <Sphere Material="Metalic" Center="030,0,090" Radius="4" />
+            <Sphere Material="Metalic" Center="030,0,100" Radius="4" />
+            <Sphere Material="Metalic" Center="030,0,110" Radius="4" />
+            <Sphere Material="Metalic" Center="030,0,120" Radius="4" />
+            <Sphere Material="Metalic" Center="030,0,130" Radius="4" />
+            <Sphere Material="Metalic" Center="030,0,140" Radius="4" />
+            <Sphere Material="Metalic" Center="030,0,150" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <!-- Row 5 -->
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="040,0,000" Radius="4" />
+            <Sphere Material="Metalic" Center="040,0,010" Radius="4" />
+            <Sphere Material="Metalic" Center="040,0,020" Radius="4" />
+            <Sphere Material="Metalic" Center="040,0,030" Radius="4" />
+            <Sphere Material="Metalic" Center="040,0,040" Radius="4" />
+            <Sphere Material="Metalic" Center="040,0,050" Radius="4" />
+            <Sphere Material="Metalic" Center="040,0,060" Radius="4" />
+            <Sphere Material="Metalic" Center="040,0,070" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="040,0,080" Radius="4" />
+            <Sphere Material="Metalic" Center="040,0,090" Radius="4" />
+            <Sphere Material="Metalic" Center="040,0,100" Radius="4" />
+            <Sphere Material="Metalic" Center="040,0,110" Radius="4" />
+            <Sphere Material="Metalic" Center="040,0,120" Radius="4" />
+            <Sphere Material="Metalic" Center="040,0,130" Radius="4" />
+            <Sphere Material="Metalic" Center="040,0,140" Radius="4" />
+            <Sphere Material="Metalic" Center="040,0,150" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <!-- Row 6 -->
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="050,0,000" Radius="4" />
+            <Sphere Material="Metalic" Center="050,0,010" Radius="4" />
+            <Sphere Material="Metalic" Center="050,0,020" Radius="4" />
+            <Sphere Material="Metalic" Center="050,0,030" Radius="4" />
+            <Sphere Material="Metalic" Center="050,0,040" Radius="4" />
+            <Sphere Material="Metalic" Center="050,0,050" Radius="4" />
+            <Sphere Material="Metalic" Center="050,0,060" Radius="4" />
+            <Sphere Material="Metalic" Center="050,0,070" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="050,0,080" Radius="4" />
+            <Sphere Material="Metalic" Center="050,0,090" Radius="4" />
+            <Sphere Material="Metalic" Center="050,0,100" Radius="4" />
+            <Sphere Material="Metalic" Center="050,0,110" Radius="4" />
+            <Sphere Material="Metalic" Center="050,0,120" Radius="4" />
+            <Sphere Material="Metalic" Center="050,0,130" Radius="4" />
+            <Sphere Material="Metalic" Center="050,0,140" Radius="4" />
+            <Sphere Material="Metalic" Center="050,0,150" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <!-- Row 7 -->
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="060,0,000" Radius="4" />
+            <Sphere Material="Metalic" Center="060,0,010" Radius="4" />
+            <Sphere Material="Metalic" Center="060,0,020" Radius="4" />
+            <Sphere Material="Metalic" Center="060,0,030" Radius="4" />
+            <Sphere Material="Metalic" Center="060,0,040" Radius="4" />
+            <Sphere Material="Metalic" Center="060,0,050" Radius="4" />
+            <Sphere Material="Metalic" Center="060,0,060" Radius="4" />
+            <Sphere Material="Metalic" Center="060,0,070" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="060,0,080" Radius="4" />
+            <Sphere Material="Metalic" Center="060,0,090" Radius="4" />
+            <Sphere Material="Metalic" Center="060,0,100" Radius="4" />
+            <Sphere Material="Metalic" Center="060,0,110" Radius="4" />
+            <Sphere Material="Metalic" Center="060,0,120" Radius="4" />
+            <Sphere Material="Metalic" Center="060,0,130" Radius="4" />
+            <Sphere Material="Metalic" Center="060,0,140" Radius="4" />
+            <Sphere Material="Metalic" Center="060,0,150" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <!-- Row 8 -->
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="070,0,000" Radius="4" />
+            <Sphere Material="Metalic" Center="070,0,010" Radius="4" />
+            <Sphere Material="Metalic" Center="070,0,020" Radius="4" />
+            <Sphere Material="Metalic" Center="070,0,030" Radius="4" />
+            <Sphere Material="Metalic" Center="070,0,040" Radius="4" />
+            <Sphere Material="Metalic" Center="070,0,050" Radius="4" />
+            <Sphere Material="Metalic" Center="070,0,060" Radius="4" />
+            <Sphere Material="Metalic" Center="070,0,070" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="070,0,080" Radius="4" />
+            <Sphere Material="Metalic" Center="070,0,090" Radius="4" />
+            <Sphere Material="Metalic" Center="070,0,100" Radius="4" />
+            <Sphere Material="Metalic" Center="070,0,110" Radius="4" />
+            <Sphere Material="Metalic" Center="070,0,120" Radius="4" />
+            <Sphere Material="Metalic" Center="070,0,130" Radius="4" />
+            <Sphere Material="Metalic" Center="070,0,140" Radius="4" />
+            <Sphere Material="Metalic" Center="070,0,150" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <!-- Row 9 -->
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="080,0,000" Radius="4" />
+            <Sphere Material="Metalic" Center="080,0,010" Radius="4" />
+            <Sphere Material="Metalic" Center="080,0,020" Radius="4" />
+            <Sphere Material="Metalic" Center="080,0,030" Radius="4" />
+            <Sphere Material="Metalic" Center="080,0,040" Radius="4" />
+            <Sphere Material="Metalic" Center="080,0,050" Radius="4" />
+            <Sphere Material="Metalic" Center="080,0,060" Radius="4" />
+            <Sphere Material="Metalic" Center="080,0,070" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="080,0,080" Radius="4" />
+            <Sphere Material="Metalic" Center="080,0,090" Radius="4" />
+            <Sphere Material="Metalic" Center="080,0,100" Radius="4" />
+            <Sphere Material="Metalic" Center="080,0,110" Radius="4" />
+            <Sphere Material="Metalic" Center="080,0,120" Radius="4" />
+            <Sphere Material="Metalic" Center="080,0,130" Radius="4" />
+            <Sphere Material="Metalic" Center="080,0,140" Radius="4" />
+            <Sphere Material="Metalic" Center="080,0,150" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <!-- Row 10 -->
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="090,0,000" Radius="4" />
+            <Sphere Material="Metalic" Center="090,0,010" Radius="4" />
+            <Sphere Material="Metalic" Center="090,0,020" Radius="4" />
+            <Sphere Material="Metalic" Center="090,0,030" Radius="4" />
+            <Sphere Material="Metalic" Center="090,0,040" Radius="4" />
+            <Sphere Material="Metalic" Center="090,0,050" Radius="4" />
+            <Sphere Material="Metalic" Center="090,0,060" Radius="4" />
+            <Sphere Material="Metalic" Center="090,0,070" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="090,0,080" Radius="4" />
+            <Sphere Material="Metalic" Center="090,0,090" Radius="4" />
+            <Sphere Material="Metalic" Center="090,0,100" Radius="4" />
+            <Sphere Material="Metalic" Center="090,0,110" Radius="4" />
+            <Sphere Material="Metalic" Center="090,0,120" Radius="4" />
+            <Sphere Material="Metalic" Center="090,0,130" Radius="4" />
+            <Sphere Material="Metalic" Center="090,0,140" Radius="4" />
+            <Sphere Material="Metalic" Center="090,0,150" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <!-- Row 11 -->
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="100,0,000" Radius="4" />
+            <Sphere Material="Metalic" Center="100,0,010" Radius="4" />
+            <Sphere Material="Metalic" Center="100,0,020" Radius="4" />
+            <Sphere Material="Metalic" Center="100,0,030" Radius="4" />
+            <Sphere Material="Metalic" Center="100,0,040" Radius="4" />
+            <Sphere Material="Metalic" Center="100,0,050" Radius="4" />
+            <Sphere Material="Metalic" Center="100,0,060" Radius="4" />
+            <Sphere Material="Metalic" Center="100,0,070" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="100,0,080" Radius="4" />
+            <Sphere Material="Metalic" Center="100,0,090" Radius="4" />
+            <Sphere Material="Metalic" Center="100,0,100" Radius="4" />
+            <Sphere Material="Metalic" Center="100,0,110" Radius="4" />
+            <Sphere Material="Metalic" Center="100,0,120" Radius="4" />
+            <Sphere Material="Metalic" Center="100,0,130" Radius="4" />
+            <Sphere Material="Metalic" Center="100,0,140" Radius="4" />
+            <Sphere Material="Metalic" Center="100,0,150" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <!-- Row 12 -->
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="110,0,000" Radius="4" />
+            <Sphere Material="Metalic" Center="110,0,010" Radius="4" />
+            <Sphere Material="Metalic" Center="110,0,020" Radius="4" />
+            <Sphere Material="Metalic" Center="110,0,030" Radius="4" />
+            <Sphere Material="Metalic" Center="110,0,040" Radius="4" />
+            <Sphere Material="Metalic" Center="110,0,050" Radius="4" />
+            <Sphere Material="Metalic" Center="110,0,060" Radius="4" />
+            <Sphere Material="Metalic" Center="110,0,070" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="110,0,080" Radius="4" />
+            <Sphere Material="Metalic" Center="110,0,090" Radius="4" />
+            <Sphere Material="Metalic" Center="110,0,100" Radius="4" />
+            <Sphere Material="Metalic" Center="110,0,110" Radius="4" />
+            <Sphere Material="Metalic" Center="110,0,120" Radius="4" />
+            <Sphere Material="Metalic" Center="110,0,130" Radius="4" />
+            <Sphere Material="Metalic" Center="110,0,140" Radius="4" />
+            <Sphere Material="Metalic" Center="110,0,150" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <!-- Row 13 -->
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="120,0,000" Radius="4" />
+            <Sphere Material="Metalic" Center="120,0,010" Radius="4" />
+            <Sphere Material="Metalic" Center="120,0,020" Radius="4" />
+            <Sphere Material="Metalic" Center="120,0,030" Radius="4" />
+            <Sphere Material="Metalic" Center="120,0,040" Radius="4" />
+            <Sphere Material="Metalic" Center="120,0,050" Radius="4" />
+            <Sphere Material="Metalic" Center="120,0,060" Radius="4" />
+            <Sphere Material="Metalic" Center="120,0,070" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="120,0,080" Radius="4" />
+            <Sphere Material="Metalic" Center="120,0,090" Radius="4" />
+            <Sphere Material="Metalic" Center="120,0,100" Radius="4" />
+            <Sphere Material="Metalic" Center="120,0,110" Radius="4" />
+            <Sphere Material="Metalic" Center="120,0,120" Radius="4" />
+            <Sphere Material="Metalic" Center="120,0,130" Radius="4" />
+            <Sphere Material="Metalic" Center="120,0,140" Radius="4" />
+            <Sphere Material="Metalic" Center="120,0,150" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <!-- Row 14 -->
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="130,0,000" Radius="4" />
+            <Sphere Material="Metalic" Center="130,0,010" Radius="4" />
+            <Sphere Material="Metalic" Center="130,0,020" Radius="4" />
+            <Sphere Material="Metalic" Center="130,0,030" Radius="4" />
+            <Sphere Material="Metalic" Center="130,0,040" Radius="4" />
+            <Sphere Material="Metalic" Center="130,0,050" Radius="4" />
+            <Sphere Material="Metalic" Center="130,0,060" Radius="4" />
+            <Sphere Material="Metalic" Center="130,0,070" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="130,0,080" Radius="4" />
+            <Sphere Material="Metalic" Center="130,0,090" Radius="4" />
+            <Sphere Material="Metalic" Center="130,0,100" Radius="4" />
+            <Sphere Material="Metalic" Center="130,0,110" Radius="4" />
+            <Sphere Material="Metalic" Center="130,0,120" Radius="4" />
+            <Sphere Material="Metalic" Center="130,0,130" Radius="4" />
+            <Sphere Material="Metalic" Center="130,0,140" Radius="4" />
+            <Sphere Material="Metalic" Center="130,0,150" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <!-- Row 15 -->
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="140,0,000" Radius="4" />
+            <Sphere Material="Metalic" Center="140,0,010" Radius="4" />
+            <Sphere Material="Metalic" Center="140,0,020" Radius="4" />
+            <Sphere Material="Metalic" Center="140,0,030" Radius="4" />
+            <Sphere Material="Metalic" Center="140,0,040" Radius="4" />
+            <Sphere Material="Metalic" Center="140,0,050" Radius="4" />
+            <Sphere Material="Metalic" Center="140,0,060" Radius="4" />
+            <Sphere Material="Metalic" Center="140,0,070" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="140,0,080" Radius="4" />
+            <Sphere Material="Metalic" Center="140,0,090" Radius="4" />
+            <Sphere Material="Metalic" Center="140,0,100" Radius="4" />
+            <Sphere Material="Metalic" Center="140,0,110" Radius="4" />
+            <Sphere Material="Metalic" Center="140,0,120" Radius="4" />
+            <Sphere Material="Metalic" Center="140,0,130" Radius="4" />
+            <Sphere Material="Metalic" Center="140,0,140" Radius="4" />
+            <Sphere Material="Metalic" Center="140,0,150" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <!-- Row 16 -->
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="150,0,000" Radius="4" />
+            <Sphere Material="Metalic" Center="150,0,010" Radius="4" />
+            <Sphere Material="Metalic" Center="150,0,020" Radius="4" />
+            <Sphere Material="Metalic" Center="150,0,030" Radius="4" />
+            <Sphere Material="Metalic" Center="150,0,040" Radius="4" />
+            <Sphere Material="Metalic" Center="150,0,050" Radius="4" />
+            <Sphere Material="Metalic" Center="150,0,060" Radius="4" />
+            <Sphere Material="Metalic" Center="150,0,070" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+        <SphereSoa8>
+          <Spheres>
+            <Sphere Material="Metalic" Center="150,0,080" Radius="4" />
+            <Sphere Material="Metalic" Center="150,0,090" Radius="4" />
+            <Sphere Material="Metalic" Center="150,0,100" Radius="4" />
+            <Sphere Material="Metalic" Center="150,0,110" Radius="4" />
+            <Sphere Material="Metalic" Center="150,0,120" Radius="4" />
+            <Sphere Material="Metalic" Center="150,0,130" Radius="4" />
+            <Sphere Material="Metalic" Center="150,0,140" Radius="4" />
+            <Sphere Material="Metalic" Center="150,0,150" Radius="4" />
+          </Spheres>
+        </SphereSoa8>
+
+      </Surfaces>
+    </SurfaceGroup>
+  </RootSurface>
+</Scene>

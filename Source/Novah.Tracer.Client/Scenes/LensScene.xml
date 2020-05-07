@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Scene xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="Scene.xsd"
+       BackgroundColor="0,0,0"
+       DefaultRefractionIndex="1"
+       AntialiasingLevel="4">
+  <Camera>
+    <PerspectiveCamera Position="-30,20,-39" LookAt="-3,-6,0" Up="0,1,0" ScreenWidth="1600" ScreenHeight="900" FieldOfView="1.57079633" />
+  </Camera>
+  <Materials>
+    <BasicMaterial Name="Red"
+              Color="1,0,0"
+              SpecularColor="1,1,1"
+              AmbientCoefficient="0.1"
+              DiffuseCoefficient="0.9"
+              SpecularCoefficient="0"
+              ReflectionCoefficient="0"
+              RefractionCoefficient="0"
+              SpecularPower="0"
+              RefractionIndex="1"
+              LightOccluder="true"
+              ShadowReceiver="true" />
+    <BasicMaterial Name="Green"
+              Color="0,1,0"
+              SpecularColor="1,1,1"
+              AmbientCoefficient="0.1"
+              DiffuseCoefficient="0.9"
+              SpecularCoefficient="0"
+              ReflectionCoefficient="0"
+              RefractionCoefficient="0"
+              SpecularPower="0"
+              RefractionIndex="1"
+              LightOccluder="true"
+              ShadowReceiver="true" />
+    <BasicMaterial Name="Blue"
+              Color="0,0,1"
+              SpecularColor="1,1,1"
+              AmbientCoefficient="0.1"
+              DiffuseCoefficient="0.9"
+              SpecularCoefficient="0"
+              ReflectionCoefficient="0"
+              RefractionCoefficient="0"
+              SpecularPower="0"
+              RefractionIndex="1"
+              LightOccluder="true"
+              ShadowReceiver="true" />
+    
+    <BasicMaterial Name="Metalic"
+              Color="1,1,1"
+              SpecularColor="1,1,1"
+              AmbientCoefficient="0.1"
+              DiffuseCoefficient="0.5"
+              SpecularCoefficient="0.5"
+              ReflectionCoefficient="0.5"
+              RefractionCoefficient="0"
+              SpecularPower="100"
+              RefractionIndex="1"
+              LightOccluder="true"
+              ShadowReceiver="true" />
+    <BasicMaterial Name="Lens"
+              Color="1,1,1"
+              SpecularColor="1,1,1"
+              AmbientCoefficient="0.0"
+              DiffuseCoefficient="0.0"
+              SpecularCoefficient="0.5"
+              ReflectionCoefficient="1.0"
+              RefractionCoefficient="1.0"
+              SpecularPower="200"
+              RefractionIndex="1.5"
+              LightOccluder="false"
+              ShadowReceiver="false" />
+
+    <LuaMaterial Name="RedChecker"
+                 AmbientCoefficient="0.1"
+                 DiffuseCoefficient="0.9"
+                 SpecularCoefficient="0"
+                 ReflectionCoefficient="0"
+                 RefractionCoefficient="0"
+                 SpecularPower="0"
+                 RefractionIndex="1"
+                 LightOccluder="false"
+                 ShadowReceiver="true">
+      <LuaCode>
+        <![CDATA[
+        
+        function shade(point, normal)
+            local x = math.abs(math.floor((point.X) / 5.0));
+            local y = math.abs(math.floor((point.Y) / 5.0));
+    
+            local xmod = x % 2;
+            local ymod = y % 2;
+    
+            if xmod == ymod then
+                return { Red = 1.0, Green = 0.4, Blue = 0.4 };
+            else
+                return { Red = 1.0, Green = 1.0, Blue = 1.0 };
+            end
+        end
+
+        ]]>
+      </LuaCode>
+    </LuaMaterial>
+
+    <LuaMaterial Name="GreenChecker"
+              AmbientCoefficient="0.1"
+              DiffuseCoefficient="0.9"
+              SpecularCoefficient="0"
+              ReflectionCoefficient="0"
+              RefractionCoefficient="0"
+              SpecularPower="0"
+              RefractionIndex="1"
+              LightOccluder="false"
+              ShadowReceiver="true">
+      <LuaCode>
+        <![CDATA[
+        
+        function shade(point, normal)
+            local z = math.abs(math.floor((point.Z) / 5.0));
+            local y = math.abs(math.floor((point.Y) / 5.0));
+    
+            local zmod = z % 2;
+            local ymod = y % 2;
+    
+            if zmod == ymod then
+                return { Red = 0.2, Green = 0.8, Blue = 0.2 };
+            else
+                return { Red = 1.0, Green = 1.0, Blue = 1.0 };
+            end
+        end
+
+        ]]>
+      </LuaCode>
+    </LuaMaterial>
+    
+    <LuaMaterial Name="BlueChecker"
+              AmbientCoefficient="0.1"
+              DiffuseCoefficient="0.9"
+              SpecularCoefficient="0"
+              ReflectionCoefficient="0"
+              RefractionCoefficient="0"
+              SpecularPower="0"
+              RefractionIndex="1"
+              LightOccluder="false"
+              ShadowReceiver="true">
+      <LuaCode>
+        <![CDATA[
+        
+        function shade(point, normal)
+            local z = math.abs(math.floor((point.Z) / 5.0));
+            local x = math.abs(math.floor((point.X) / 5.0));
+    
+            local zmod = z % 2;
+            local xmod = x % 2;
+    
+            if zmod == xmod then
+                return { Red = 0.4, Green = 0.4, Blue = 1.0 };
+            else
+                return { Red = 1.0, Green = 1.0, Blue = 1.0 };
+            end
+        end
+
+        ]]>
+      </LuaCode>
+    </LuaMaterial>
+  </Materials>
+  <Lights>
+    <!--<PointLight Color="1,1,1" Position="-15,13,-35" />-->
+    <ParallelogramLight Color="1,1,1" Corner="-15,13,-35" Edge1="0,5,0" Edge2="5,0,0" SampleLevel="10" SampleMode="2" />
+  </Lights>
+  <RootSurface>
+    <SurfaceGroup>
+      <Surfaces>
+        <Sphere Material="Metalic" Center="-30,-30,+30" Radius="5" />
+        <Sphere Material="Metalic" Center="-15,-30,+30" Radius="5" />
+        <Sphere Material="Metalic" Center="+00,-30,+30" Radius="5" />
+        <Sphere Material="Metalic" Center="+15,-30,+30" Radius="5" />
+        <Sphere Material="Metalic" Center="+30,-30,+30" Radius="5" />
+        
+        <Sphere Material="Metalic" Center="-30,-15,+25" Radius="5" />
+        <Sphere Material="Metalic" Center="-15,-15,+25" Radius="6" />
+        <Sphere Material="Metalic" Center="+00,-15,+25" Radius="6" />
+        <Sphere Material="Metalic" Center="+15,-15,+25" Radius="6" />
+        <Sphere Material="Metalic" Center="+30,-15,+25" Radius="5" />
+        
+        <Sphere Material="Metalic" Center="-30,-00,+20" Radius="5" />
+        <Sphere Material="Metalic" Center="-15,-00,+20" Radius="6" />
+        <Sphere Material="Metalic" Center="+00,-00,+20" Radius="7" />
+        <Sphere Material="Metalic" Center="+15,-00,+20" Radius="6" />
+        <Sphere Material="Metalic" Center="+30,-00,+20" Radius="5" />
+        
+        <Sphere Material="Metalic" Center="-30,+15,+25" Radius="5" />
+        <Sphere Material="Metalic" Center="-15,+15,+25" Radius="6" />
+        <Sphere Material="Metalic" Center="+00,+15,+25" Radius="6" />
+        <Sphere Material="Metalic" Center="+15,+15,+25" Radius="6" />
+        <Sphere Material="Metalic" Center="+30,+15,+25" Radius="5" />
+        
+        <Sphere Material="Metalic" Center="-30,+30,+30" Radius="5" />
+        <Sphere Material="Metalic" Center="-15,+30,+30" Radius="5" />
+        <Sphere Material="Metalic" Center="+00,+30,+30" Radius="5" />
+        <Sphere Material="Metalic" Center="+15,+30,+30" Radius="5" />
+        <Sphere Material="Metalic" Center="+30,+30,+30" Radius="5" />
+
+        <Csg Operation="Intersection">
+          <LeftSurface>
+            <TransformedSurface>
+              <MatrixStack>
+                <TranslationMatrix Translation="-23,13,-27" />
+                <ScaleMatrix Scale="1,1,0.07" />
+              </MatrixStack>
+              <Surface>
+                <Sphere Material="Lens" Center="0,0,0" Radius="7" />
+              </Surface>
+            </TransformedSurface>
+          </LeftSurface>
+          <RightSurface>
+            <Sphere Material="Lens" Center="-23,13,-27" Radius="5" />
+          </RightSurface>
+        </Csg>
+
+        <Plane Name="Floor" Material="BlueChecker" Normal="0,1,0" Point="0,-40,0" />
+        <Plane Name="Ceiling" Material="BlueChecker" Normal="0,-1,0" Point="0,40,0" />
+        <Plane Name="FarWall" Material="RedChecker" Normal="0,0,-1" Point="0,0,40" />
+        <Plane Name="NearWall" Material="RedChecker" Normal="0,0,1" Point="0,0,-40" />
+        <Plane Name="LeftWall" Material="GreenChecker" Normal="1,0,0" Point="-40,0,0" />
+        <Plane Name="RightWall" Material="GreenChecker" Normal="-1,0,0" Point="40,0,0" />
+      <!--
+        <Csg Operation="Difference">
+          <LeftSurface>
+            <Csg Operation="Intersection">
+              <LeftSurface>
+                <AxisAlignedRectangularBox Material="Red" Minimum="-10,5,-10" Maximum="10,25,10" />
+              </LeftSurface>
+              <RightSurface>
+                <Sphere Material="Blue" Center="0,15,0" Radius="14" />
+              </RightSurface>
+            </Csg>
+          </LeftSurface>
+          <RightSurface>
+            <Sphere Material="Green" Center="0,15,0" Radius="13" />
+          </RightSurface>
+        </Csg>-->
+      </Surfaces>
+    </SurfaceGroup>
+  </RootSurface>
+</Scene>

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Templates">
+      <UniqueIdentifier>{cd010c59-d752-49e9-a0cc-db7c8167a471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Surfaces">
+      <UniqueIdentifier>{8e5d5a9d-aba5-458b-85e8-b0a619173a5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Surfaces">
+      <UniqueIdentifier>{8f0fc215-551e-46bc-8f8f-a1106716a856}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Vector2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Color4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Color3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Color3T.h">
+      <Filter>Header Files\Templates</Filter>
+    </ClInclude>
+    <ClInclude Include="Color4T.h">
+      <Filter>Header Files\Templates</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2T.h">
+      <Filter>Header Files\Templates</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3T.h">
+      <Filter>Header Files\Templates</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector4T.h">
+      <Filter>Header Files\Templates</Filter>
+    </ClInclude>
+    <ClInclude Include="IntersectionData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NovahAdvancedMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixT.h">
+      <Filter>Header Files\Templates</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Header Files\Surfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Quadric.h">
+      <Filter>Header Files\Surfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Ray.h">
+      <Filter>Header Files\Surfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>Header Files\Surfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Surface.h">
+      <Filter>Header Files\Surfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfaceGroup.h">
+      <Filter>Header Files\Surfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformedSurface.h">
+      <Filter>Header Files\Surfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Parallelogram.h">
+      <Filter>Header Files\Surfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="CsgSurface.h">
+      <Filter>Header Files\Surfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="CsgOperation.h">
+      <Filter>Header Files\Surfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingSurface.h">
+      <Filter>Header Files\Surfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="AxisAlignedRectangularBox.h">
+      <Filter>Header Files\Surfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="RectangularFrustum.h">
+      <Filter>Header Files\Surfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Cylinder.h">
+      <Filter>Header Files\Surfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3Soa8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QuaternionT.h">
+      <Filter>Header Files\Templates</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IntersectionData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Surface.cpp">
+      <Filter>Source Files\Surfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceGroup.cpp">
+      <Filter>Source Files\Surfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformedSurface.cpp">
+      <Filter>Source Files\Surfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Sphere.cpp">
+      <Filter>Source Files\Surfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Plane.cpp">
+      <Filter>Source Files\Surfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Ray.cpp">
+      <Filter>Source Files\Surfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Quadric.cpp">
+      <Filter>Source Files\Surfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Parallelogram.cpp">
+      <Filter>Source Files\Surfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="CsgSurface.cpp">
+      <Filter>Source Files\Surfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingSurface.cpp">
+      <Filter>Source Files\Surfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="AxisAlignedRectangularBox.cpp">
+      <Filter>Source Files\Surfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="RectangularFrustum.cpp">
+      <Filter>Source Files\Surfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Cylinder.cpp">
+      <Filter>Source Files\Surfaces</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
